@@ -1,0 +1,55 @@
+apiVersion: krew.googlecontainertools.github.com/v1alpha2
+kind: Plugin
+metadata:
+  name: kubectl-bind
+spec:
+  version: v0.0.4
+  platforms:
+    - bin: bin/kubectl-bind.exe
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.4/kubectl-bind_0.0.4_windows_arm64.tar.gz
+      sha256: 5ff4fd1a0218067b230e16cb7cf41dfde1f7c7c26b4ef79a64d84968a871c011
+      selector:
+        matchLabels:
+          os: windows
+          arch: arm64
+    - bin: bin/kubectl-bind.exe
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.4/kubectl-bind_0.0.4_windows_amd64.tar.gz
+      sha256: ad64f0cdf5aeb9f406398dfc8992ff09b5e08825c3f494d0426cbdc0319e1acf
+      selector:
+        matchLabels:
+          os: windows
+          arch: amd64
+    - bin: bin/kubectl-bind
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.4/kubectl-bind_0.0.4_linux_arm64.tar.gz
+      sha256: 781aed77e7a78ba63aa2b500b31d9961725b01f5c7b9ed832041db28880f4fb4
+      selector:
+        matchLabels:
+          os: linux
+          arch: arm64
+    - bin: bin/kubectl-bind
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.4/kubectl-bind_0.0.4_linux_amd64.tar.gz
+      sha256: 84a840f8e84ea4163f81692d5ffaa510af628ef8635a36ad4645730a7de2bd26
+      selector:
+        matchLabels:
+          os: linux
+          arch: amd64
+    - bin: bin/kubectl-bind
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.4/kubectl-bind_0.0.4_darwin_arm64.tar.gz
+      sha256: a84db5abe634414992328545abdaccaae69c485aa7523652fc07cbf1f58be322
+      selector:
+        matchLabels:
+          os: darwin
+          arch: arm64
+    - bin: bin/kubectl-bind
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.4/kubectl-bind_0.0.4_darwin_amd64.tar.gz
+      sha256: bc05ed477a349655d087a9b0ea4bf2df2eb29f25dacbc6d4d7692916fb828f2d
+      selector:
+        matchLabels:
+          os: darwin
+          arch: amd64
+  shortDescription: Bind API services and other remote types into the current cluster.
+  homepage: https://kubectl-bind.io/
+  description: |
+    Binds API services and other remote types into the current cluster. API services
+    are CRDs that are operated by a service provider without anything by that service
+    provider running in the local cluster. Real SaaS for Kubernetes.
