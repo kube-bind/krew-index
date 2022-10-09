@@ -3,46 +3,46 @@ kind: Plugin
 metadata:
   name: kubectl-bind
 spec:
-  version: v0.0.6
+  version: v0.0.7
   platforms:
     - bin: bin/kubectl-bind.exe
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.6/kubectl-bind_0.0.6_windows_arm64.tar.gz
-      sha256: abcf7e0a7951f764cece3e8246d810a48d3a3564643e489b9cc40d6fd4123d79
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.7/kubectl-bind_0.0.7_windows_arm64.tar.gz
+      sha256: 3a8908e2cb8455a5a2a1807ae64088ed001c4a11b70e4ee9f9591aa86f02a541
       selector:
         matchLabels:
           os: windows
           arch: arm64
     - bin: bin/kubectl-bind.exe
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.6/kubectl-bind_0.0.6_windows_amd64.tar.gz
-      sha256: 22f52fff98842ee0029bddff51d64c6d7a17206460cb0e7d7709473638776772
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.7/kubectl-bind_0.0.7_windows_amd64.tar.gz
+      sha256: e253b3dafb5154d7160ac43fd9fff6f2e04f72494c1f495c3eae2797f61aca00
       selector:
         matchLabels:
           os: windows
           arch: amd64
     - bin: bin/kubectl-bind
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.6/kubectl-bind_0.0.6_linux_arm64.tar.gz
-      sha256: 0777aa15632c4e13cd766b0652185afa019ee206a58a0840f9adc55c55c8357e
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.7/kubectl-bind_0.0.7_linux_arm64.tar.gz
+      sha256: 7993b6c3fc5bad572f8a8090b166a62d0840ac4767b6b1fbc6fdf5784daa8118
       selector:
         matchLabels:
           os: linux
           arch: arm64
     - bin: bin/kubectl-bind
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.6/kubectl-bind_0.0.6_linux_amd64.tar.gz
-      sha256: f6c61334bc708226e088baf18753913ea53622663901ce51e94c1dc28e5f24ec
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.7/kubectl-bind_0.0.7_linux_amd64.tar.gz
+      sha256: 5232cac840d79d46cd69f888d41e14209d31ccc3e7d3a900a9778a95c7671f36
       selector:
         matchLabels:
           os: linux
           arch: amd64
     - bin: bin/kubectl-bind
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.6/kubectl-bind_0.0.6_darwin_arm64.tar.gz
-      sha256: 304520c84c8a9844130b432f6e09b61410cce4bff7d61360de994e29710ccae2
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.7/kubectl-bind_0.0.7_darwin_arm64.tar.gz
+      sha256: ed3fffeead88f2d9e9cbc12b85f43eebeab945ee1a9ed32c35880be54f4ff87c
       selector:
         matchLabels:
           os: darwin
           arch: arm64
     - bin: bin/kubectl-bind
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.6/kubectl-bind_0.0.6_darwin_amd64.tar.gz
-      sha256: c8e396f854ffb98bac70fcb8a75f1142d9df7ca26864c82bbffd6951533ad194
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.0.7/kubectl-bind_0.0.7_darwin_amd64.tar.gz
+      sha256: 9d66b9dd31811b4e8447719972c1059a2cf1e3feecccbfdca403dfd8156863f2
       selector:
         matchLabels:
           os: darwin
