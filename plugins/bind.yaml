@@ -4,52 +4,52 @@ kind: Plugin
 metadata:
   name: bind
 spec:
-  version: v0.4.8
+  version: v0.5.0
   platforms:
     - bin: bin/kubectl-bind.exe
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.4.8/kubectl-bind_0.4.8_windows_arm64.tar.gz
-      sha256: 61695ef87a735973c1ca399e3fd96043b5d4d8db53159e8fc660cf316d8cac16
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.5.0/kubectl-bind_0.5.0_windows_arm64.tar.gz
+      sha256: a6c48f264f966b93cd477a9c0072b9bd5f15103cbb4157bdf56433fa8b380058
       selector:
         matchLabels:
           os: windows
           arch: arm64
     - bin: bin/kubectl-bind.exe
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.4.8/kubectl-bind_0.4.8_windows_amd64.tar.gz
-      sha256: de9fd777e3fc3b3cfdfa122808170fa268265918d6d59e30fc1505949f091dbe
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.5.0/kubectl-bind_0.5.0_windows_amd64.tar.gz
+      sha256: 10d0767a8fc1d7cc60b9fa8c377be3f06d2c1fd881dec3baaff5c97844c014dc
       selector:
         matchLabels:
           os: windows
           arch: amd64
     - bin: bin/kubectl-bind
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.4.8/kubectl-bind_0.4.8_linux_arm64.tar.gz
-      sha256: c1c32932f0a80b3bca082b9b2925bdf48e5bcbee18eb6651d5547c37ee16e3e6
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.5.0/kubectl-bind_0.5.0_linux_arm64.tar.gz
+      sha256: f752c5cd128255c04a0c2e97b8085efd749ce3f337b9a5d2fa307a2c4667302f
       selector:
         matchLabels:
           os: linux
           arch: arm64
     - bin: bin/kubectl-bind
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.4.8/kubectl-bind_0.4.8_linux_amd64.tar.gz
-      sha256: 113342b2b2265d876422adf53a3193b3157b67e614041e2893eed3841812f906
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.5.0/kubectl-bind_0.5.0_linux_amd64.tar.gz
+      sha256: eb7d1461e04485ddc99b0e47e7fb88f01a499acf946387f71daea26dda872c76
       selector:
         matchLabels:
           os: linux
           arch: amd64
     - bin: bin/kubectl-bind
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.4.8/kubectl-bind_0.4.8_darwin_arm64.tar.gz
-      sha256: 9eea3e83f47283ed249f278440fefd58c5b134ba58cdb013ea7b5e9f37263fbf
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.5.0/kubectl-bind_0.5.0_darwin_arm64.tar.gz
+      sha256: 252a6adc100e3caf4f2cbb73b8aa3cabda3e81564b506f0cea0df3058409781d
       selector:
         matchLabels:
           os: darwin
           arch: arm64
     - bin: bin/kubectl-bind
-      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.4.8/kubectl-bind_0.4.8_darwin_amd64.tar.gz
-      sha256: 5c2a72869c9a53fde3b7a163359c58aa9319a2cb2093c1c02f46e27d832e445f
+      uri: https://github.com/kube-bind/kube-bind/releases/download/v0.5.0/kubectl-bind_0.5.0_darwin_amd64.tar.gz
+      sha256: 188f1657c4ae2e21ff4a33a6cc8e406d92608783426f136b86ae123ec659dd2d
       selector:
         matchLabels:
           os: darwin
           arch: amd64
   shortDescription: Bind API services and other remote types into the current cluster.
-  homepage: https://kubectl-bind.io/
+  homepage: https://kube-bind.io/
   description: |
     Binds API services and other remote types into the current cluster. API services
     are CRDs that are operated by a service provider without anything by that service
